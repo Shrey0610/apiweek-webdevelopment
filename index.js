@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/challenges', async(req,res) => {
-    axios.get('http://www.ghw.mlh.io/challenges')
+    axios.get('https://ghw.mlh.io/challenges')
     .then((response) => {
         const html = response.data;
         const $ = cherrio.load(html);
